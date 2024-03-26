@@ -23,7 +23,7 @@ jobs:
 
   Release-solution-Feedback:
     needs: [ Export-solution-Feedback ]
-    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
+    uses: ./.github/workflows/release_solution_to_prod.yml
     with:
       #You can specify the solution name here
       solution_name: BuchausleihenVerwaltung
