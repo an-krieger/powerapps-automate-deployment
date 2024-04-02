@@ -11,7 +11,7 @@ jobs:
     uses: ./.github/workflows/export-and-branch-solution.yml
     with:
       #You can specify the solution name here
-      solution_name: BuchausleihenVerwaltung
+      solution_name: CiCdTest
       solution_exported_folder: out/exported/
       solution_folder: out/solutions/
       solution_target_folder: solutions/
@@ -26,7 +26,7 @@ jobs:
     uses: ./.github/workflows/release_solution_to_prod.yml
     with:
       #You can specify the solution name here
-      solution_name: BuchausleihenVerwaltung
+      solution_name: CiCdTest
       #Update your values here
       BUILD_ENVIRONMENT_URL: https://org4efa06c7.crm4.dynamics.com/
       PRODUCTION_ENVIRONMENT_URL: https://org46e6cc0d.crm4.dynamics.com
