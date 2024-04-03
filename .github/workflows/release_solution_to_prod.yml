@@ -61,6 +61,9 @@ jobs:
       with:
         lfs: true
 
+    - name: actions-install
+      uses: microsoft/powerplatform-actions/actions-install@latest
+
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@latest
       with:
