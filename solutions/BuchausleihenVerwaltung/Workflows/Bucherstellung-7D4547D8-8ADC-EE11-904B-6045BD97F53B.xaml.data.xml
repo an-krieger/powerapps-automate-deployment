@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{7d4547d8-8adc-ee11-904b-6045bd97f53b}" Name="Bucherstellung" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Bucherstellung-7D4547D8-8ADC-EE11-904B-6045BD97F53B.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>ankr_bucherstellung</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>crafd_Buch</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1031" description="Bucherstellung" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{9813d9bd-8671-404f-92f8-c139d6acfce7}">
+      <label languagecode="1031" description="Kerndaten" />
+    </steplabels>
+    <steplabels id="{822cfc1d-1c4d-4c6c-bb3a-e38f91535d86}">
+      <label languagecode="1031" description="Titel" />
+    </steplabels>
+    <steplabels id="{c5d43d00-e733-463e-a96c-5073f4b2d514}">
+      <label languagecode="1031" description="Untertitel" />
+    </steplabels>
+    <steplabels id="{57409092-9fdb-4b6c-9a24-1f62872ceb34}">
+      <label languagecode="1031" description="Autor/-en" />
+    </steplabels>
+    <steplabels id="{7e5672e3-701c-401a-b8ed-db9b8ecc654f}">
+      <label languagecode="1031" description="Erscheinungs- Und Auflagedaten" />
+    </steplabels>
+    <steplabels id="{d290bc33-a32c-4b7e-b5df-c784d2b1543b}">
+      <label languagecode="1031" description="Erscheinungsdatum" />
+    </steplabels>
+    <steplabels id="{63c48cf3-7454-448f-849b-82ea8c9600d4}">
+      <label languagecode="1031" description="Erscheinungsort" />
+    </steplabels>
+    <steplabels id="{80f18714-f659-43a2-8ba2-f139e3364dea}">
+      <label languagecode="1031" description="Seitenzahl" />
+    </steplabels>
+    <steplabels id="{fe427e1e-70f6-45a8-b302-bf83e2d7f135}">
+      <label languagecode="1031" description="Optionale Informationen" />
+    </steplabels>
+    <steplabels id="{8f3772f1-7d76-4a83-9ec6-494beeb6d519}">
+      <label languagecode="1031" description="Beschreibung" />
+    </steplabels>
+  </labels>
+</Workflow>

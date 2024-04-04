@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="BücherAusleiheDashboard" languagecode="1031" />
+  </LocalizedNames>
+  <FormId>{5e13c19a-10e6-ee11-904c-6045bd97f53b}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="powerbi">
+      <form>
+        <tabs>
+          <tab showlabel="false" verticallayout="true" id="{20ec9dba-3a9c-419c-8b70-1efd8384323b}">
+            <labels>
+              <label description="" languagecode="1031" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section showlabel="false" showbar="false" columns="111" id="{1786fb5b-8937-4d7e-a584-cd3c89c7d019}">
+                    <labels>
+                      <label description="" languagecode="1031" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="3" rowspan="24" showlabel="false" id="{d6f94e5e-bfc1-4a82-ba02-05cb832e41e5}" availableforphone="false">
+                          <labels>
+                            <label description="" languagecode="1031" />
+                          </labels>
+                          <control id="2e710e74-7ff8-4905-ab91-2e1f2ddc3449" classid="{8C54228C-1B25-4909-A12A-F2B968BB0D62}">
+                            <parameters>
+                              <PowerBIGroupId>53c3f938-22da-4410-b0e3-fb7af98f2d3d</PowerBIGroupId>
+                              <PowerBIDashboardId>28fa7d97-dd6c-485b-b95d-b740e3b57d87</PowerBIDashboardId>
+                              <TileUrl>https://app.powerbi.com/dashboardEmbed?config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUdFUk1BTlktV0VTVC1DRU5UUkFMLVBSSU1BUlktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7InVzYWdlTWV0cmljc1ZOZXh0Ijp0cnVlfX0%3D&amp;groupId=53c3f938-22da-4410-b0e3-fb7af98f2d3d&amp;dashboardId=28fa7d97-dd6c-485b-b95d-b740e3b57d87</TileUrl>
+                              <Type>1</Type>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</Dashboard>

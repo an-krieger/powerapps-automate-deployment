@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="ankr_kategorie" localizedName="Kategorie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Kategorie" languagecode="1031" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1031" />
+  </Descriptions>
+  <options>
+    <option value="437800000" ExternalValue="">
+      <labels>
+        <label description="Softwareentwicklung" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800001" ExternalValue="">
+      <labels>
+        <label description="IoT" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800002" ExternalValue="">
+      <labels>
+        <label description="Datenbanken" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800003">
+      <labels>
+        <label description="Security" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800004">
+      <labels>
+        <label description="Architektur" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800005">
+      <labels>
+        <label description="Best Practice" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800006">
+      <labels>
+        <label description="Algorithmen" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800007">
+      <labels>
+        <label description="Datenstrukturen" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="437800008">
+      <labels>
+        <label description="Design" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

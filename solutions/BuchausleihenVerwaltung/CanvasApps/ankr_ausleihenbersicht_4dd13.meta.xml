@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ankr_ausleihenbersicht_4dd13</Name>
+  <AppVersion>2024-04-04T11:22:26Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.24032.26.0</CreatedByClientVersion>
+  <MinClientVersion>3.24032.26.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24032.26","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false","sienaVersion":"20240402T080738Z-3.24032.26.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Leihen</DisplayName>
+  <Description></Description>
+  <CommitMessage></CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"abc2008f-52ad-4406-be0f-c977f45c7db1":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3677/sharepointonline/icon.png","dataSources":["Buchausleihe Admins"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://trinnovativegmbh.sharepoint.com/sites/BuchausleiheTeam":{"dataSources":{"Buchausleihe Admins":{"tableName":"11b39c57-03d5-4141-bb9f-ec709bca226e"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read"]}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Ausleihen":{"entitySetName":"crafd_ausleihes","logicalName":"crafd_ausleihe"},"Benutzer":{"entitySetName":"systemusers","logicalName":"systemuser"},"Bücher":{"entitySetName":"crafd_buchs","logicalName":"crafd_buch"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>2</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"componenttype":1,"logicalname":"crafd_ausleihe"},{"componenttype":1,"logicalname":"systemuser"},{"componenttype":1,"logicalname":"crafd_buch"}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/ankr_ausleihenbersicht_4dd13_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/ankr_ausleihenbersicht_4dd13_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b2ef0786-2431-46a2-9c16-40ff647429b0}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{9813d9bd-8671-404f-92f8-c139d6acfce7}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{17b436f0-cb62-43c2-9784-fb5fccc2489a}">
+          <labels>
+            <label description="Kerndaten" languagecode="1031" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{c30593aa-a8dd-a9c8-d4cd-e07ba104be6d}" name="StageStep3_section1" labelid="{6920584e-7fff-4e5f-be53-39609f21868e}">
+                  <labels>
+                    <label description="Kerndaten" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{822cfc1d-1c4d-4c6c-bb3a-e38f91535d86}" showlabel="true" visible="true" labelid="{8b74a423-0da8-4bf2-9519-329401af5a89}">
+                        <labels>
+                          <label description="Titel" languagecode="1031" />
+                        </labels>
+                        <control id="bpf_crafd_buch_ankr_bucherstellung:crafd_titel" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crafd_titel" disabled="false" relationship="bpf_crafd_buch_ankr_bucherstellung" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c5d43d00-e733-463e-a96c-5073f4b2d514}" showlabel="true" visible="true" labelid="{7d031db9-298c-483a-b170-1d6f75cd737a}">
+                        <labels>
+                          <label description="Untertitel" languagecode="1031" />
+                        </labels>
+                        <control id="bpf_crafd_buch_ankr_bucherstellung:crafd_beschreibung" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crafd_beschreibung" disabled="false" relationship="bpf_crafd_buch_ankr_bucherstellung" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{57409092-9fdb-4b6c-9a24-1f62872ceb34}" showlabel="true" visible="true" labelid="{d93bae9f-30f5-47da-aa2e-cc91bfeade34}">
+                        <labels>
+                          <label description="Autor/-en" languagecode="1031" />
+                        </labels>
+                        <control id="bpf_crafd_buch_ankr_bucherstellung:crafd_autor" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crafd_autor" disabled="false" relationship="bpf_crafd_buch_ankr_bucherstellung" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{7e5672e3-701c-401a-b8ed-db9b8ecc654f}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{5496f46e-99f0-4616-87f2-5a235746560c}">
+          <labels>
+            <label description="Erscheinungs- Und Auflagedaten" languagecode="1031" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{e13033f3-d86e-0da6-a4e2-864dbdac97f2}" name="StageStep11_section1" labelid="{a2a948c6-2954-407e-a59a-2efa480b078d}">
+                  <labels>
+                    <label description="Erscheinungs- Und Auflagedaten" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d290bc33-a32c-4b7e-b5df-c784d2b1543b}" showlabel="true" visible="true" labelid="{bf654a80-6e24-4597-8653-83098d864f97}">
+                        <labels>
+                          <label description="Erscheinungsdatum" languagecode="1031" />
+                        </labels>
+                        <control id="bpf_crafd_buch_ankr_bucherstellung:crafd_erscheinungsjahr" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crafd_erscheinungsjahr" disabled="false" relationship="bpf_crafd_buch_ankr_bucherstellung" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{63c48cf3-7454-448f-849b-82ea8c9600d4}" showlabel="true" visible="true" labelid="{fe103166-0390-42d3-a6e2-53d2db6fa91f}">
+                        <labels>
+                          <label description="Erscheinungsort" languagecode="1031" />
+                        </labels>
+                        <control id="bpf_crafd_buch_ankr_bucherstellung:crafd_erscheinungsort" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crafd_erscheinungsort" disabled="false" relationship="bpf_crafd_buch_ankr_bucherstellung" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80f18714-f659-43a2-8ba2-f139e3364dea}" showlabel="true" visible="true" labelid="{e12453bf-0249-4727-b490-182473cbcbde}">
+                        <labels>
+                          <label description="Seitenzahl" languagecode="1031" />
+                        </labels>
+                        <control id="bpf_crafd_buch_ankr_bucherstellung:crafd_seitenzahl" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="crafd_seitenzahl" disabled="false" relationship="bpf_crafd_buch_ankr_bucherstellung" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{fe427e1e-70f6-45a8-b302-bf83e2d7f135}" name="StageStep19" locklevel="0" expanded="true" visible="false" labelid="{59a4ef40-ce92-4ced-9ce0-05772aeaa423}">
+          <labels>
+            <label description="Optionale Informationen" languagecode="1031" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{4ae3ef5d-6dd9-f549-bfe8-88e549fc8805}" name="StageStep19_section1" labelid="{9a00b4ef-3a52-4c4f-9180-963ec6f5d0ae}">
+                  <labels>
+                    <label description="Optionale Informationen" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8f3772f1-7d76-4a83-9ec6-494beeb6d519}" showlabel="true" visible="true" labelid="{43c257c0-aecf-4125-96f0-b71946b81ba0}">
+                        <labels>
+                          <label description="Beschreibung" languagecode="1031" />
+                        </labels>
+                        <control id="bpf_crafd_buch_ankr_bucherstellung:ankr_beschreibung" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="ankr_beschreibung" disabled="false" relationship="bpf_crafd_buch_ankr_bucherstellung" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informationen" languagecode="1031" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Ein Formular für diese Entität." languagecode="1031" />
+    </Descriptions>
+  </systemform>
+</forms>

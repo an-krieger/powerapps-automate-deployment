@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f8e2b071-4add-ee11-904c-6045bd97f53b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crafd_id" select="1" icon="1" preview="1">
+        <row name="result" id="crafd_ausleiheid">
+          <cell name="crafd_id" width="86" />
+          <cell name="crafd_buch" width="100" />
+          <cell name="a_8a779320c9bc4a22ac23ec2dacb20f07.crafd_titel" width="109" />
+          <cell name="a_8a779320c9bc4a22ac23ec2dacb20f07.crafd_autor" width="116" />
+          <cell name="crafd_ausleihdatum" width="116" />
+          <cell name="crafd_ausleihdauer" width="99" />
+          <cell name="ankr_spatestesruckgabedatum" width="187" />
+          <cell name="ankr_abgeholt" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="crafd_ausleihe">
+          <attribute name="crafd_id" />
+          <attribute name="crafd_ausleihdatum" />
+          <attribute name="crafd_ausleihdauer" />
+          <attribute name="crafd_buch" />
+          <attribute name="crafd_ausleiheid" />
+          <filter type="and">
+            <condition attribute="ankr_anfragestatus" operator="eq" value="1" />
+            <condition attribute="ankr_zuruckgegeben" operator="eq" value="0" />
+            <condition attribute="crafd_ruckgabedatum" operator="null" />
+          </filter>
+          <link-entity alias="a_8a779320c9bc4a22ac23ec2dacb20f07" name="crafd_buch" to="crafd_buch" from="crafd_buchid" link-type="outer" visible="false">
+            <attribute name="crafd_titel" />
+            <attribute name="crafd_autor" />
+          </link-entity>
+          <order attribute="crafd_ausleihdatum" descending="true" />
+          <order attribute="crafd_id" descending="true" />
+          <attribute name="ankr_abgeholt" />
+          <attribute name="ankr_spatestesruckgabedatum" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Offene Ausleihen Benutzer" languagecode="1031" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

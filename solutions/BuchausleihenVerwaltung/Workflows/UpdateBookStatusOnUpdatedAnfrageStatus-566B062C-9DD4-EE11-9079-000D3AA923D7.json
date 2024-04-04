@@ -1,0 +1,223 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "ankr_sharedcommondataserviceforapps_f05cd"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "ankr_sharedoffice365_1c614"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "Wenn_eine_Zeile_hinzugefügt,_geändert_oder_gelöscht_wird": {
+          "metadata": {
+            "operationMetadataId": "726cad11-5024-48b3-bd61-b61e1dd3fa20"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "crafd_ausleihe",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "ankr_anfragestatus"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Option": {
+          "runAfter": {},
+          "cases": {
+            "Anfrage_akzeptiert": {
+              "case": 1,
+              "actions": {
+                "Zeile_aktualisieren": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "d04d8181-dcdb-43cf-8b5f-42c68853149d"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_commondataserviceforapps",
+                      "operationId": "UpdateRecord",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                    },
+                    "parameters": {
+                      "entityName": "crafd_buchs",
+                      "recordId": "@triggerOutputs()?['body/_crafd_buch_value']",
+                      "item/crafd_status": 1
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "E-Mail_senden_(V2)": {
+                  "runAfter": {
+                    "Zeile_nach_ID_abrufen": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "5e447948-7813-452c-812b-aed41f9ac6f9"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_office365",
+                      "operationId": "SendEmailV2",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                    },
+                    "parameters": {
+                      "emailMessage/To": "@outputs('Zeile_nach_ID_abrufen')?['body/internalemailaddress']",
+                      "emailMessage/Subject": "Ausleihanfrage für '@{outputs('Zeile_aktualisieren')?['body/crafd_titel']}' von @{outputs('Zeile_aktualisieren')?['body/crafd_autor']} akzeptiert",
+                      "emailMessage/Body": "<p>Die Ausleihe für das Buch '@{outputs('Zeile_aktualisieren')?['body/crafd_titel']}' von @{outputs('Zeile_aktualisieren')?['body/crafd_autor']} wurde akzeptiert. Hole das Buch alsbald ab und weise den Admin darauf hin, dies zu protokollieren.</p>",
+                      "emailMessage/Importance": "Normal"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "Zeile_nach_ID_abrufen": {
+                  "runAfter": {
+                    "Zeile_aktualisieren": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "145ed2c0-ba9f-4efb-81da-791e28594881"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_commondataserviceforapps",
+                      "operationId": "GetItem",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                    },
+                    "parameters": {
+                      "entityName": "systemusers",
+                      "recordId": "@triggerOutputs()?['body/_crafd_benutzer_value']"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              }
+            },
+            "Anfrage_abgelehnt": {
+              "case": 2,
+              "actions": {
+                "Zeile_aktualisieren_2": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "6002681a-c335-46a7-8524-6a79f550c807"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_commondataserviceforapps",
+                      "operationId": "UpdateRecord",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                    },
+                    "parameters": {
+                      "entityName": "crafd_buchs",
+                      "recordId": "@triggerOutputs()?['body/_crafd_buch_value']",
+                      "item/crafd_status": 0
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "Zeile_nach_ID_abrufen_2": {
+                  "runAfter": {
+                    "Zeile_aktualisieren_2": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "41be5932-72c5-496f-a0a0-c392b98002c8"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_commondataserviceforapps",
+                      "operationId": "GetItem",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                    },
+                    "parameters": {
+                      "entityName": "systemusers",
+                      "recordId": "@triggerOutputs()?['body/_crafd_benutzer_value']"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "E-Mail_senden_(V2)_2": {
+                  "runAfter": {
+                    "Zeile_nach_ID_abrufen_2": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "efbe06bc-d675-49fe-88ed-ad09775e029b"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_office365",
+                      "operationId": "SendEmailV2",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                    },
+                    "parameters": {
+                      "emailMessage/To": "@outputs('Zeile_nach_ID_abrufen_2')?['body/internalemailaddress']",
+                      "emailMessage/Subject": "Ausleihanfrage für '@{outputs('Zeile_aktualisieren_2')?['body/crafd_titel']}' von @{outputs('Zeile_aktualisieren_2')?['body/crafd_autor']} abgelehnt",
+                      "emailMessage/Body": "<p>Die Ausleihe für das Buch '@{outputs('Zeile_aktualisieren_2')?['body/crafd_titel']}' von @{outputs('Zeile_aktualisieren_2')?['body/crafd_autor']} wurde abgelehnt.</p>",
+                      "emailMessage/Importance": "Normal"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "actions": {}
+          },
+          "expression": "@triggerOutputs()?['body/ankr_anfragestatus']",
+          "metadata": {
+            "operationMetadataId": "d22a9ec7-61df-4bed-a63a-e7dff81a0ff3"
+          },
+          "type": "Switch"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

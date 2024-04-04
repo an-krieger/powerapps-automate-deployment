@@ -1,0 +1,9 @@
+<dvtablesearchentity dvtablesearchentityid="e6f5fe16-5ed2-ee11-907a-000d3aa9297b">
+  <dvtablesearch>
+    <dvtablesearchid>e3f5fe16-5ed2-ee11-907a-000d3aa9297b</dvtablesearchid>
+  </dvtablesearch>
+  <entitylogicalname>crafd_ausleihe</entitylogicalname>
+  <iscustomizable>1</iscustomizable>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</dvtablesearchentity>

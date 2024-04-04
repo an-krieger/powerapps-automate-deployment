@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InteractionCentricDashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="Bücher Statistiken" languagecode="1031" />
+  </LocalizedNames>
+  <FormId>{370ae389-0ae2-ee11-904c-6045bd97f53b}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="interactioncentricdashboard">
+      <form>
+        <tabs filterby="modifiedon" timeframe="4" primaryentitylogicalname="crafd_buch" entityview="{C87ABD04-2EDD-EE11-904C-6045BD97F53B}" dashboardCategory="1_0" tilespresent="false">
+          <tab showlabel="true" verticallayout="true" collapsible="true" id="{66433274-1b6e-42a3-9af2-23357bc68968}">
+            <labels>
+              <label description="" languagecode="1031" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section name="VisualFilters" showlabel="false" showbar="false" columns="11" id="{c00343b0-243c-43c1-a207-b09ef1e49158}">
+                    <labels>
+                      <label description="Abschnitt" languagecode="1031" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="1" rowspan="12" showlabel="false" ischartcell="true" id="{c1285c13-9390-4b50-b4e3-df0b367cbfa3}" auto="false">
+                          <labels>
+                            <label description="Buch" languagecode="1031" />
+                          </labels>
+                          <control id="Componente451053" uniqueid="{ed90605b-0791-b80a-aadb-3e4ac280674b}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>crafd_buch</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>10</RecordsPerPage>
+                              <HeaderColorCode />
+                              <ViewId>{C87ABD04-2EDD-EE11-904C-6045BD97F53B}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds />
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{4DC8ACB0-EBE1-EE11-904C-6045BD97F53B}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" ischartcell="true" id="{c4b858a6-f6bd-4ad5-95a1-55a674c6f096}" auto="false">
+                          <labels>
+                            <label description="Buch" languagecode="1031" />
+                          </labels>
+                          <control id="Component162652e" uniqueid="{b7d1b5d3-b159-ba61-1d77-711267b5e633}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>crafd_buch</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>10</RecordsPerPage>
+                              <HeaderColorCode />
+                              <ViewId>{C87ABD04-2EDD-EE11-904C-6045BD97F53B}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds />
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{6F53F9D0-0CE2-EE11-904C-6045BD97F53B}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+          <tab name="StreamsContainer" showlabel="true" verticallayout="true" collapsible="false" id="{1494c4e6-c7c2-4d8d-a21c-b90db444ca53}">
+            <labels>
+              <label description="" languagecode="1031" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section name="Streams" showlabel="false" showbar="false" columns="11" id="{d4e4788a-6f0c-4e90-b9df-e0205f4c0e68}">
+                    <labels>
+                      <label description="Abschnitt" languagecode="1031" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="2" rowspan="12" showlabel="false" isstreamcell="true" id="{fcfb0b18-7a65-421c-9552-8bb89292b605}">
+                          <labels>
+                            <label description="" languagecode="1031" />
+                          </labels>
+                          <control id="Component{8828c1c3-eab9-e571-e097-48584560862c}" classid="{EE9078C8-6946-4E2C-B8F8-35E65F4BE6A8}">
+                            <parameters>
+                              <StreamObjects>
+                                <ShowAsTiles>false</ShowAsTiles>
+                                <StreamObject id="{dcdaa807-6008-dd04-0473-4c5e853ca350}" type="1">
+                                  <LogicalEntityName>crafd_buch</LogicalEntityName>
+                                  <EntityViewId>{967B9FFA-2CDD-EE11-904C-6045BD97F53B}</EntityViewId>
+                                </StreamObject>
+                                <StreamObject id="{8b2a05eb-d9c6-0b0b-391b-0b55abe569e5}" type="1">
+                                  <LogicalEntityName>crafd_buch</LogicalEntityName>
+                                  <EntityViewId>{A861D2EB-2CDD-EE11-904C-6045BD97F53B}</EntityViewId>
+                                </StreamObject>
+                                <StreamObject id="{7eb8a751-2980-a308-9b09-4d40cd72e4cd}" type="1">
+                                  <LogicalEntityName>crafd_buch</LogicalEntityName>
+                                  <EntityViewId>{A370EBDC-2CDD-EE11-904C-6045BD97F53B}</EntityViewId>
+                                </StreamObject>
+                              </StreamObjects>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</InteractionCentricDashboard>

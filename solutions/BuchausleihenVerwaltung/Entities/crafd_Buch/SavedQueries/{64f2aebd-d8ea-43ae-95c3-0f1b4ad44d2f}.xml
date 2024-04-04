@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{64f2aebd-d8ea-43ae-95c3-0f1b4ad44d2f}</savedqueryid>
+    <layoutxml>
+      <grid name="crafd_buchs" jump="crafd_id" select="1" icon="1" preview="0">
+        <row name="crafd_buch" id="crafd_buchid">
+          <cell name="crafd_titel" width="100" />
+          <cell name="crafd_autor" width="100" />
+          <cell name="crafd_status" width="100" />
+          <cell name="crafd_id" width="116" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crafd_buch">
+          <attribute name="crafd_buchid" />
+          <attribute name="crafd_id" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="crafd_titel" />
+          <attribute name="crafd_autor" />
+          <attribute name="crafd_status" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Buch Suchansicht" languagecode="1031" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

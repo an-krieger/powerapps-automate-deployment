@@ -1,0 +1,1 @@
+ankr_spatestesruckgabedatum: =DateAdd(crafd_ausleihdatum, If(crafd_ausleihdauer = [@crafd_ausleihe_crafd_ausleihe_crafd_ausleihdauer].'8', 8, crafd_ausleihdauer = [@crafd_ausleihe_crafd_ausleihe_crafd_ausleihdauer].'4', 4, 6) * 7)

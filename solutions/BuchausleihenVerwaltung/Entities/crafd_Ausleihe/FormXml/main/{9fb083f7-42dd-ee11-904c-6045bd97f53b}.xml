@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9fb083f7-42dd-ee11-904c-6045bd97f53b}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{eb41ac46-7332-4cc0-bfdb-0e962a1506a9}" IsUserDefined="1" name="general" labelid="{8330bfa7-afe8-4a5e-aed8-73769146b0bc}">
+          <labels>
+            <label description="Allgemein" languagecode="1031" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{1cdbe2cc-4be7-4f1d-9148-baa02b8e1042}" columns="11" labelid="{0f13dbe4-a5bf-4390-ac73-17b95abf76b0}">
+                  <labels>
+                    <label description="Ausleihdaten" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{535f0ea9-43fd-44d3-82b5-cc7d227fb14d}" labelid="{43f8bc09-efcd-4afa-aa0c-e07ba634b773}" visible="true" locklevel="1">
+                        <labels>
+                          <label description="Id" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_id" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crafd_id" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70ab8100-7e4e-44b1-ad53-0b203e31376a}" locklevel="0" rowspan="1" colspan="1" labelid="{17977373-10ea-41b9-a54e-4a82f3c830af}">
+                        <labels>
+                          <label description="Buch" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_buch" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crafd_buch" disabled="false">
+                          <parameters>
+                            <AvailableViewIds>{64F2AEBD-D8EA-43AE-95C3-0F1B4AD44D2F},{A370EBDC-2CDD-EE11-904C-6045BD97F53B}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell locklevel="0" id="{a82c9a3c-4af0-4c45-b166-c09d8a11571d}" labelid="{ee1a7518-39e9-4469-8b3c-f20a7926b648}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ec0c4b5-4466-44d7-9849-c31747d2763c}" locklevel="0" rowspan="1" colspan="1" labelid="{4b00a1f7-fa88-4c9c-a981-d70c578944d6}">
+                        <labels>
+                          <label description="Benutzer" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_benutzer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crafd_benutzer" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{412961d8-efd4-479a-a5bc-13bdd888740a}" labelid="{40476d81-d317-42a0-8ec4-ca7dbc841659}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{334d4543-a359-443c-8ff1-fab104c77856}" colspan="1" rowspan="1" labelid="{e1f944c0-9ee0-4692-9f2b-5c52596cbb41}">
+                        <labels>
+                          <label description="Ausleihdauer in Wochen" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_ausleihdauer" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="crafd_ausleihdauer" uniqueid="{72f3a410-5be3-49f7-a16a-529caccf232c}" />
+                      </cell>
+                      <cell locklevel="0" id="{ee780831-59ee-4a06-b20f-a572ba650cbf}" labelid="{ab515e73-1452-449f-ad30-628dd19d12f5}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c43bb2e-d188-4281-a271-9c9b64d7483b}" locklevel="0" colspan="1" rowspan="1" labelid="{aca7d46f-31d0-4eb3-8d94-5d5a42dd5b7d}">
+                        <labels>
+                          <label description="Anfragestatus" languagecode="1031" />
+                        </labels>
+                        <control id="ankr_anfragestatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="ankr_anfragestatus" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{09f14d55-0f58-4c9c-9325-c943744a5346}" labelid="{f8ad49a0-e125-4ede-9e10-3a7534dcf4c4}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d62120f0-4de4-4e9f-8b70-ff780c62a2f4}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{6c752071-1970-4210-8491-afdffa7e83b5}">
+                        <labels>
+                          <label description="Besitzer (Unternehmenseinheit)" languagecode="1031" />
+                        </labels>
+                        <control id="owningbusinessunit" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="owningbusinessunit" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{13dbefe2-161d-4325-ab72-eb08d2aaf9d8}" labelid="{305fdde0-ba34-4381-8d54-6c2db9c7f850}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fe1d7a52-1bd6-4f8a-935f-df3af91fd8fb}" labelid="{75fa50e9-2237-4513-91eb-56954ba4289d}">
+                        <labels>
+                          <label description="Ausleihdatum" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_ausleihdatum" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crafd_ausleihdatum" />
+                      </cell>
+                      <cell locklevel="0" id="{a2b3198a-2392-4957-baed-fe4d9c1e1a29}" labelid="{a33886bc-c8f5-40a9-9742-4b0daf849502}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d6a88133-a6b1-4d99-b62e-4045a4aba1d8}" locklevel="0" colspan="1" rowspan="1" labelid="{30326acf-9bcb-4bef-a52e-1dc302f0f6ca}">
+                        <labels>
+                          <label description="Abgeholt" languagecode="1031" />
+                        </labels>
+                        <control id="ankr_abgeholt" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ankr_abgeholt" disabled="false" uniqueid="{92ee5224-6b53-48e0-97a0-3d3f21d8ff39}" />
+                      </cell>
+                      <cell locklevel="0" id="{8a87d81e-4b7b-4d78-a8f7-976f0b649291}" labelid="{50ce661b-2517-4ae2-83ad-f0a5a0c9ea2a}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a05f4d0a-86d1-48be-942b-295d5ab66e64}" locklevel="0" colspan="1" rowspan="1" labelid="{a13c077b-b6dc-43c5-8200-4ae20da15987}">
+                        <labels>
+                          <label description="Zurückgegeben" languagecode="1031" />
+                        </labels>
+                        <control id="ankr_zuruckgegeben" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ankr_zuruckgegeben" disabled="false" uniqueid="{9f12bf7d-0c68-4790-8678-ec9f98893fa0}" />
+                      </cell>
+                      <cell locklevel="0" id="{b2eff411-630f-419d-9e37-6837729a7d08}" labelid="{02a206c9-3da7-444d-9906-718ba480207e}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69196899-654e-40f6-8ed6-aa3bdab39cfc}" labelid="{549ec2c2-1789-442e-b770-28686c55668f}">
+                        <labels>
+                          <label description="Rückgabedatum" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_ruckgabedatum" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crafd_ruckgabedatum" />
+                      </cell>
+                      <cell locklevel="0" id="{8eb9c363-1714-4805-b13d-624cf81d9b74}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ce18a8bb-3df9-4b36-a543-8bd6e458e0ba}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Spätestes Rückgabedatum" languagecode="1031" />
+                        </labels>
+                        <control id="ankr_spatestesruckgabedatum" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ankr_spatestesruckgabedatum" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{9328f73b-387d-4051-81f4-2fb64b588f90}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_636" id="f3f249ac-1458-451c-85ea-e322fcdde0b8" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{7938957a-97f8-4fab-886e-849c6317e02f}">
+                  <labels>
+                    <label description="Benutzer Details" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{09ee5da4-3f34-421b-ba63-066890a13c0e}" colspan="1" rowspan="1" labelid="{878d0a4a-1996-44cd-acb7-ce048027c9e4}">
+                        <labels>
+                          <label description="New QV control 1709898831097" languagecode="1031" />
+                        </labels>
+                        <control id="QuickviewControl1709898831097" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="crafd_benutzer">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="systemuser"&gt;d49f3b18-41dd-ee11-904c-6045bd97f53b&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="6a03a824-915f-47ef-8b0f-c83c0b70b9a7" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{bcbcf5df-0efa-40b5-9ace-b1e2a575a73b}">
+                  <labels>
+                    <label description="Buch Details" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{84307992-b3c6-48c9-aebb-fba1ac6fb472}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1709899360340" languagecode="1031" />
+                        </labels>
+                        <control id="QuickviewControl1709899360340" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="crafd_buch">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="crafd_buch"&gt;37f5583d-41dd-ee11-904c-6045bd97f53b&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2d97138d-1c2e-43c8-9b84-1454c3f324ac}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{e332afd6-63d5-4c05-912a-4855501e6ed7}" showlabel="false" labelid="{28b81982-4737-4237-8b88-95d44db78681}">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{d2aba511-a393-4678-9cc4-7376b9732032}" showlabel="false" labelid="{b70d1442-95f4-44ff-80cd-fa7914b90d8e}">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{10943d5c-786e-4bdb-9760-c857bf53760c}" showlabel="false" labelid="{7c2b0fa3-f21e-4dae-bd6c-bf28097704c4}">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{9b14644f-021b-4f48-a441-204041a9c923}" colspan="1" rowspan="1" labelid="{ffadadc7-c27a-46bc-b2d9-2303b9f6ba25}">
+              <labels>
+                <label description="Besitzer" languagecode="1031" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{5163894d-a437-4868-9243-c98266e13bbb}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{22f89e32-edf0-477e-975e-e149f307f74b}" showlabel="false" labelid="{617431bf-e08e-45a1-9520-596ca3ae30df}">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{b35525fb-d294-43a1-8155-c68d0adfd821}" showlabel="false" labelid="{0397d668-4f2b-4d4b-8b7c-919932d4a921}">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{6ed547aa-4ae3-4980-b725-24b7b76e93ee}" showlabel="false" labelid="{bc898186-b1f4-4ebb-85ec-996bc6d7885a}">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{9f12bf7d-0c68-4790-8678-ec9f98893fa0}">
+          <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>ankr_zuruckgegeben</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">ankr_zuruckgegeben</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">ankr_zuruckgegeben</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">ankr_zuruckgegeben</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{92ee5224-6b53-48e0-97a0-3d3f21d8ff39}">
+          <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>ankr_abgeholt</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">ankr_abgeholt</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">ankr_abgeholt</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">ankr_abgeholt</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{72f3a410-5be3-49f7-a16a-529caccf232c}">
+          <customControl id="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>crafd_ausleihdauer</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value type="OptionSet">crafd_ausleihdauer</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value type="OptionSet">crafd_ausleihdauer</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value type="OptionSet">crafd_ausleihdauer</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="ankr_preset_id" libraryUniqueId="{9d7516c4-ac8c-442f-bb43-5deb55166fff}" />
+        <Library name="ankr_date_value" libraryUniqueId="{6f8ff623-00f1-417a-8788-86e79d8f52a1}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="generateId" libraryName="ankr_preset_id" handlerUniqueId="{45705291-23d4-499b-8c4b-2b1936388799}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ankr_zuruckgegeben">
+          <Handlers>
+            <Handler functionName="presetReturnDateOnVisible" libraryName="ankr_date_value" handlerUniqueId="{40e5a60a-b128-4e0e-9fb8-51c4072ff07c}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ankr_anfragestatus">
+          <Handlers>
+            <Handler functionName="presetReturnDateOnVisible" libraryName="ankr_date_value" handlerUniqueId="{785b698e-18d7-44ef-b6a5-0f4f61a65b0f}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ankr_abgeholt">
+          <Handlers>
+            <Handler functionName="presetReturnDateOnVisible" libraryName="ankr_date_value" handlerUniqueId="{440b3f2d-a543-4e50-8798-5690c4bd616c}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="crafd_ausleihdauer">
+          <Handlers>
+            <Handler functionName="updateLatestReturnDate" libraryName="ankr_date_value" handlerUniqueId="{87648ffa-d221-4baf-a44e-68c689b3ff4d}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Ausleihe Hauptformular" languagecode="1031" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Ein Formular für diese Entität." languagecode="1031" />
+    </Descriptions>
+  </systemform>
+</forms>

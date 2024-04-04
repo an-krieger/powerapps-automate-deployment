@@ -1,0 +1,35 @@
+function presetReturnDateOnVisible(executionContext) {
+    // Get the form context
+    var formContext = executionContext.getFormContext();
+
+    // Access the field control by its logical name
+    var returnDateField = formContext.getAttribute("crafd_ruckgabedatum");
+    var isReturnedField = formContext.getAttribute("ankr_zuruckgegeben");
+    
+    if (isReturnedField.getValue() === true && returnDateField.getValue() === null) {
+        returnDateField.setValue(new Date());
+        console.log(returnDateField.getValue());
+    }
+    
+    // kann man weglasse, wird via business rule schon gehandhabt
+    if(isReturnedField.getValue() === false) {
+        returnDateField.setValue(null);
+        console.log(returnDateField.getValue());
+    }
+}
+
+function updateLatestReturnDate(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var duration = formContext.getAttribute("crafd_ausleihdauer");
+    var lendRequestDate = formContext.getAttribute("crafd_ausleihdatum");
+    var latestReturn = formContext.getAttribute("ankr_spatestesruckgabedatum");
+
+
+    var newDate = lendRequestDate.getValue();
+    newDate.setDate(lendRequestDate.getValue().getDate() + (duration.getValue() * 7));
+    console.log(newDate);
+
+    latestReturn.setValue(newDate);
+
+    
+}

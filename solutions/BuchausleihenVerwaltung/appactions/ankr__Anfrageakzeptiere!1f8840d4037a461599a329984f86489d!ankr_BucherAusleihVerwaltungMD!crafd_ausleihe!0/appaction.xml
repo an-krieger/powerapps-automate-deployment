@@ -1,0 +1,37 @@
+<appaction uniquename="ankr__Anfrageakzeptiere!1f8840d4037a461599a329984f86489d!ankr_BucherAusleihVerwaltungMD!crafd_ausleihe!0">
+  <appmoduleid>
+    <uniquename>ankr_BucherAusleihVerwaltungMD</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Anfrage akzeptieren">
+    <label description="Anfrage akzeptieren" languagecode="1031" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>crafd_ausleihe</logicalname>
+  </contextentity>
+  <contextvalue>crafd_ausleihe</contextvalue>
+  <fonticon>$clientsvg:Accept</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>Anfrageakzeptiere!1f8840d4037a461599a329984f86489d</name>
+  <onclickeventjavascriptfunctionname>acceptRequestFromForm</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":4},{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>2d8cdeb2-9fe7-ee11-904c-6045bd97f53b</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100015.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>ankr_bucherausleihverwaltungmddefaultcommandlibrary_55d07</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>c091a80757fa4fd79c55844fc09f5466</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

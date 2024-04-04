@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="ankr_anfragestatus" localizedName="Anfragestatus" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Anfragestatus" languagecode="1031" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1031" />
+  </Descriptions>
+  <options>
+    <option value="0" ExternalValue="">
+      <labels>
+        <label description="Ausstehend" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="1" ExternalValue="">
+      <labels>
+        <label description="Abgelehnt" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+    <option value="2" ExternalValue="">
+      <labels>
+        <label description="Akzeptiert" languagecode="1031" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1031" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

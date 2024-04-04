@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ankr_msformseditor_f3404</Name>
+  <AppVersion>2024-04-04T11:22:29Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.24024.12.0</CreatedByClientVersion>
+  <MinClientVersion>3.24024.12.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24024.12","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>MS Forms Editor</DisplayName>
+  <Description></Description>
+  <CommitMessage></CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"cd736f1f-4e2a-462d-8c0a-f8be5926abb0":{"id":"/providers/microsoft.powerapps/apis/shared_quizerstellung-5fe51a7778d6d8bdc9-5fe70b93bdd0470359","displayName":"QuizErstellung","iconUri":"https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png","dataSources":["QuizErstellung"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["GetAllForms"],"isCustomApiSolutionAware":false}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>2</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/ankr_msformseditor_f3404_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/ankr_msformseditor_f3404_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

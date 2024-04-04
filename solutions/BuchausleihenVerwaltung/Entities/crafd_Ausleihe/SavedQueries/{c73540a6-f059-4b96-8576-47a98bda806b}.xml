@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c73540a6-f059-4b96-8576-47a98bda806b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crafd_id" select="1" icon="1" preview="1">
+        <row name="result" id="crafd_ausleiheid">
+          <cell name="crafd_id" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="crafd_ausleihdatum" width="119" />
+          <cell name="crafd_ausleihdauer" width="115" />
+          <cell name="crafd_ausleiheid" width="100" />
+          <cell name="crafd_benutzer" width="100" />
+          <cell name="crafd_buch" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crafd_ausleihe">
+          <attribute name="crafd_ausleiheid" />
+          <attribute name="crafd_id" />
+          <attribute name="createdon" />
+          <order attribute="crafd_id" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="crafd_ausleihdatum" />
+          <attribute name="crafd_ausleihdauer" />
+          <attribute name="crafd_benutzer" />
+          <attribute name="crafd_buch" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inaktive Ausleihen" languagecode="1031" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

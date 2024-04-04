@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>ankr_BucherAusleihVerwaltungMD</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="crafd_ausleihe" />
+    <AppModuleComponent type="1" schemaName="crafd_buch" />
+    <AppModuleComponent type="1" schemaName="socialactivity" />
+    <AppModuleComponent type="1" schemaName="systemuser" />
+    <AppModuleComponent type="26" id="{64f2aebd-d8ea-43ae-95c3-0f1b4ad44d2f}" />
+    <AppModuleComponent type="26" id="{74cbdb10-b606-4b5f-acf7-43b440c44fae}" />
+    <AppModuleComponent type="26" id="{aa0068bf-f4b2-463a-b3de-468cc536a61c}" />
+    <AppModuleComponent type="26" id="{c73540a6-f059-4b96-8576-47a98bda806b}" />
+    <AppModuleComponent type="26" id="{ec8da6f3-30dc-4a6d-9e57-5789b0d1e3b7}" />
+    <AppModuleComponent type="26" id="{fab47109-d8dc-435d-b06d-5fcadeb8d04c}" />
+    <AppModuleComponent type="26" id="{a370ebdc-2cdd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{a861d2eb-2cdd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{967b9ffa-2cdd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{3d6ae202-2ddd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{b9a4970a-2ddd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{c87abd04-2edd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{12172d0c-30dd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{3d0c9f2e-30dd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{dce60841-30dd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{ead27259-30dd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{ad2bad51-31dd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{c161ebe8-31dd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{47399863-32dd-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{77e92280-f0e1-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{7444c807-7ae7-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="26" id="{e4ce2e6d-1d09-490e-9495-8fe005fce385}" />
+    <AppModuleComponent type="26" id="{5e53bfe0-8a64-476a-9afa-9d1a7634e2a1}" />
+    <AppModuleComponent type="26" id="{63027c70-6698-4b7f-b687-e594f5f7dfa7}" />
+    <AppModuleComponent type="26" id="{8a6f76af-3703-46f6-b695-f85a40c09097}" />
+    <AppModuleComponent type="29" id="{7d4547d8-8adc-ee11-904b-6045bd97f53b}" />
+    <AppModuleComponent type="60" id="{3dc36fa2-00e2-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="60" id="{370ae389-0ae2-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="60" id="{5f04f7b8-9eea-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="60" id="{3c2b2b02-a1ea-ee11-904c-6045bd97f53b}" />
+    <AppModuleComponent type="62" schemaName="ankr_BucherAusleihVerwaltungMD" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{b47dbfd0-c5e6-ee11-904c-6045bd97f53b}" />
+    <Role id="{c2f09008-eae5-ee11-904c-6045bd97f53b}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{df332c1e-8de7-ee11-904c-6045bd97f53b}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="BookMgmt" languagecode="1031" />
+  </LocalizedNames>
+  <appelements>
+    <appelement uniquename="ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_ausleiheanfragen_46793">
+      <canvasappid>
+        <name>ankr_ausleiheanfragen_46793</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_ausleiheanfragen_46793</name>
+    </appelement>
+    <appelement uniquename="ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_ausleihenbersicht_4dd13">
+      <canvasappid>
+        <name>ankr_ausleihenbersicht_4dd13</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_ausleihenbersicht_4dd13</name>
+    </appelement>
+    <appelement uniquename="ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_bcherlistenansicht_95e6c">
+      <canvasappid>
+        <name>ankr_bcherlistenansicht_95e6c</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_bcherlistenansicht_95e6c</name>
+    </appelement>
+    <appelement uniquename="ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_bucherausleihverwaltungmddefaultcommandlibrary_55d07">
+      <canvasappid>
+        <name>ankr_bucherausleihverwaltungmddefaultcommandlibrary_55d07</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>ankr_ankr_BucherAusleihVerwaltungMD_canvasappid_ankr_bucherausleihverwaltungmddefaultcommandlibrary_55d07</name>
+    </appelement>
+  </appelements>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+  </appsettings>
+</AppModule>
