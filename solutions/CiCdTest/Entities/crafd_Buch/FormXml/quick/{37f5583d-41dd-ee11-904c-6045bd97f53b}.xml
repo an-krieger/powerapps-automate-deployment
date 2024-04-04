@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{37f5583d-41dd-ee11-904c-6045bd97f53b}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{b9ee63e8-9dcc-4ad3-8a7c-3984b0a48bce}">
+          <labels>
+            <label description="Neue Registerkarte" languagecode="1031" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{3bdc77c4-c119-4bb2-98bd-71e8fab75e65}">
+                  <labels>
+                    <label description="Neuer Abschnitt" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{76265811-a6f6-4817-b818-b983e549cfab}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{53adf612-d220-43a9-9a77-b766482da9b5}" locklevel="0" colspan="1" rowspan="1" labelid="{3b34201b-ed13-4c9f-9f18-dc74a386c25d}">
+                        <labels>
+                          <label description="Id" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_id" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crafd_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{67ae8adb-5618-47c1-9983-90377b1b172d}" locklevel="0" colspan="1" rowspan="1" labelid="{ed034967-e36f-49f0-947b-03f62181865b}">
+                        <labels>
+                          <label description="Titel" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_titel" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crafd_titel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aa637e70-c20e-43ea-8d62-6cee3a9e421d}" locklevel="0" colspan="1" rowspan="1" labelid="{347028bc-2c00-47be-8e3d-9782b5110682}">
+                        <labels>
+                          <label description="Untertitel" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_beschreibung" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crafd_beschreibung" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6f4f7289-b510-4c33-aff7-0a33cf4e3d44}" locklevel="0" colspan="1" rowspan="1" labelid="{299262cc-2448-4108-b5da-82df29747d99}">
+                        <labels>
+                          <label description="Autor" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_autor" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crafd_autor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{45685a9f-7233-4506-97c1-362a16552ef4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_status" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="crafd_status" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{378690a2-483e-47c0-8980-083e05841b33}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Kategorien" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_kategorien" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="crafd_kategorien" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0965dd9b-6ab1-477e-94d1-d9a8a9f09ac1}" locklevel="0" colspan="1" rowspan="1" visible="true" showlabel="true">
+                        <labels>
+                          <label description="Seitenzahl" languagecode="1031" />
+                        </labels>
+                        <control id="crafd_seitenzahl" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="crafd_seitenzahl" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Buch Schnellansichtsformular" languagecode="1031" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24024.204" SolutionPackageVersion="9.2" languagecode="1031" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>CiCdTest</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="CiCdTest" languagecode="1031" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Krieger</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Krieger" languagecode="1031" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>ankr</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>43780</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="crafd_buch" behavior="0" />
+      <RootComponent type="62" schemaName="ankr_TestApp" behavior="0" />
+      <RootComponent type="80" schemaName="ankr_TestApp" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="ankr_bucherstellung" displayName="Bucherstellung" solution="Active" />
+        <Dependent type="1" schemaName="crafd_buch" displayName="Buch" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crafd_ausleihe" displayName="Ausleihe" solution="Active" />
+        <Dependent type="1" schemaName="crafd_buch" displayName="Buch" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crafd_ausleihe" displayName="Ausleihe" solution="Active" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="crafd_Buch_crafd_Buch_crafd_Ausleihe" displayName="crafd_Buch_crafd_Buch_crafd_Ausleihe" parentSchemaName="crafd_buch" parentDisplayName="Buch" solution="Active" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Aktuelle Ausleihen Buch" displayName="Aktuelle Ausleihen Buch" parentSchemaName="crafd_ausleihe" parentDisplayName="Ausleihe" solution="Active" id="{306b486b-48dd-ee11-904c-6045bd97f53b}" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Alle Ausleihen" displayName="Alle Ausleihen" parentSchemaName="crafd_ausleihe" parentDisplayName="Ausleihe" solution="Active" id="{77e92280-f0e1-ee11-904c-6045bd97f53b}" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Stattgefundene Ausleihen Buch" displayName="Stattgefundene Ausleihen Buch" parentSchemaName="crafd_ausleihe" parentDisplayName="Ausleihe" solution="Active" id="{6a0faf16-48dd-ee11-904c-6045bd97f53b}" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Ausleihdauer Distributionen" displayName="Ausleihdauer Distributionen" parentSchemaName="crafd_ausleihe" parentDisplayName="Ausleihe" solution="Active" id="{ca2cc2a5-eee1-ee11-904c-6045bd97f53b}" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="ankr_preset_id" displayName="ankr_preset_id" solution="Active" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="ankr_visibility_via_role" displayName="ankr_visibility_via_role" solution="Active" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Buch" id="{e9db9d50-1aff-4357-8d7f-2f580df4ba13}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="ankr_TestApp" displayName="TestApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2402.4013)" />
+        <Dependent type="68" id="{22ee4f2e-3a57-422f-946b-3a9449d2310c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="ankr_kategorie" displayName="Kategorie" solution="Active" />
+        <Dependent type="2" schemaName="ankr_optionalekategorien" displayName="Optionale Kategorien" parentSchemaName="crafd_buch" parentDisplayName="Buch" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.7)" id.uniquename="AppChannel" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=ankr_TestApp,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="ankr_TestApp" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

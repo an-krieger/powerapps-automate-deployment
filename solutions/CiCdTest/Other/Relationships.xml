@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_crafd_buch" />
+  <EntityRelationship Name="lk_crafd_buch_createdby" />
+  <EntityRelationship Name="lk_crafd_buch_modifiedby" />
+  <EntityRelationship Name="owner_crafd_buch" />
+  <EntityRelationship Name="team_crafd_buch" />
+  <EntityRelationship Name="user_crafd_buch" />
+</EntityRelationships>
