@@ -28,7 +28,4 @@
   <IsCustomizable>1</IsCustomizable>
   <BackgroundImageUri>/CanvasApps/ankr_bcherlistenansicht_95e6c_BackgroundImageUri</BackgroundImageUri>
   <DocumentUri>/CanvasApps/ankr_bcherlistenansicht_95e6c_DocumentUri.msapp</DocumentUri>
-  <AdditionalUris>
-    <AdditionalUri>/CanvasApps/ankr_bcherlistenansicht_95e6c_AdditionalUris0_identity.json</AdditionalUri>
-  </AdditionalUris>
 </CanvasApp>
