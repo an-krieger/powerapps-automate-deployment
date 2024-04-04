@@ -1,0 +1,79 @@
+function acceptRequest(FirstSelectedItemId, PrimaryControl) {
+    var Id = FirstSelectedItemId.toLowerCase().replace(/[{}]/g, "");
+    var data = {
+        "ankr_anfragestatus": 1
+
+    };
+    Xrm.WebApi.updateRecord("crafd_ausleihe", Id, data)
+        .then(
+            function () {
+                PrimaryControl.refresh();
+            }
+        ).catch(
+            function (error) {
+
+            }
+        );
+}
+
+function acceptRequestFromForm(FirstPrimaryItemId, PrimaryControl) {
+    var Id = FirstPrimaryItemId.replace(/[{}]/g, "");
+    var data = {
+        "ankr_anfragestatus": 1
+    };
+    Xrm.WebApi.updateRecord("crafd_ausleihe", Id, data)
+        .then(
+            function () {
+                PrimaryControl.data.refresh(false).then(function () {
+                    console.log("Form refreshed successfully");
+                }, function (error) {
+                    console.log("Error refreshing form: " + error.message);
+                });
+            }
+        ).catch(
+            function (error) {
+                
+            }
+        );
+}
+
+function denyRequest(FirstSelectedItemId, PrimaryControl) {
+    var Id = FirstSelectedItemId.toLowerCase().replace(/[{}]/g, "");
+    var data = {
+        "ankr_anfragestatus": 2
+
+    };
+    Xrm.WebApi.updateRecord("crafd_ausleihe", Id, data)
+        .then(
+            function () {
+                PrimaryControl.refresh();
+            }
+        ).catch(
+            function (error) {
+                
+            }
+        );
+    
+}
+
+function denyRequestFromForm(FirstPrimaryItemId, PrimaryControl) {
+    var Id = FirstPrimaryItemId.replace(/[{}]/g, "");
+    var data = {
+        "ankr_anfragestatus": 2
+
+    };
+    Xrm.WebApi.updateRecord("crafd_ausleihe", Id, data)
+    .then(
+        function () {
+            PrimaryControl.data.refresh(false).then(function () {
+                console.log("Form refreshed successfully");
+            }, function (error) {
+                console.log("Error refreshing form: " + error.message);
+            });
+        }
+    ).catch(
+        function (error) {
+            
+        }
+    );
+}

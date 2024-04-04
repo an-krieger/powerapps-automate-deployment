@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ankr_bcherverwaltung_c5737</Name>
+  <AppVersion>2024-04-04T11:22:24Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.24032.26.0</CreatedByClientVersion>
+  <MinClientVersion>3.24032.26.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24032.26","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false","sienaVersion":"20240227T113215Z-3.24022.13.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>BuchMgmt</DisplayName>
+  <Description></Description>
+  <CommitMessage></CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"141ce0f6-b5f1-4714-bd3e-c277ab6fc82c":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logik-Flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png","dataSources":["TriggerAusleiheApproval"],"dependencies":["cd512a1c-1d80-4eee-9297-14192a263a12","be2b54ef-a446-4d5a-b6d1-71d1493b9d3d"],"dependents":[],"parameterHints":{"workflowName":{"value":"98cbb8bf-ab19-48e1-a4cc-ef7a09cf7655"},"workflowEntityId":{"value":"0dc0e22b-28d2-ee11-9079-000d3aa923d7"},"workflowDisplayName":{"value":"Trigger Ausleihe Approval"},"cd512a1c-1d80-4eee-9297-14192a263a12":{"value":"shared_commondataserviceforapps"},"be2b54ef-a446-4d5a-b6d1-71d1493b9d3d":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"98cbb8bf-ab19-48e1-a4cc-ef7a09cf7655"},"workflowEntityId":{"value":"0dc0e22b-28d2-ee11-9079-000d3aa923d7"},"workflowDisplayName":{"value":"Trigger Ausleihe Approval"},"shared_commondataserviceforapps":{"value":"cd512a1c-1d80-4eee-9297-14192a263a12"},"shared_office365":{"value":"be2b54ef-a446-4d5a-b6d1-71d1493b9d3d"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"cd512a1c-1d80-4eee-9297-14192a263a12":{"id":"/providers/microsoft.powerapps/apis/shared_commondataserviceforapps","displayName":"Microsoft Dataverse","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1679/1.0.1679.3643/commondataserviceforapps/icon.png","dataSources":[],"dependencies":[],"dependents":["141ce0f6-b5f1-4714-bd3e-c277ab6fc82c","42fc73a3-59cc-4ba8-806d-9f606f445ac6"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Premium"},"be2b54ef-a446-4d5a-b6d1-71d1493b9d3d":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1677/1.0.1677.3637/office365/icon.png","dataSources":[],"dependencies":[],"dependents":["141ce0f6-b5f1-4714-bd3e-c277ab6fc82c","42fc73a3-59cc-4ba8-806d-9f606f445ac6"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"42fc73a3-59cc-4ba8-806d-9f606f445ac6":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logik-Flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png","dataSources":["TriggerAusleiheRowId"],"dependencies":["cd512a1c-1d80-4eee-9297-14192a263a12","be2b54ef-a446-4d5a-b6d1-71d1493b9d3d"],"dependents":[],"parameterHints":{"workflowName":{"value":"8d3dc65e-e2fd-4722-9a2a-43a8205990b3"},"workflowEntityId":{"value":"9b0b39e9-bdd4-ee11-9079-000d3aa923d7"},"workflowDisplayName":{"value":"Trigger Ausleihe RowId"},"cd512a1c-1d80-4eee-9297-14192a263a12":{"value":"shared_commondataserviceforapps"},"be2b54ef-a446-4d5a-b6d1-71d1493b9d3d":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"8d3dc65e-e2fd-4722-9a2a-43a8205990b3"},"workflowEntityId":{"value":"9b0b39e9-bdd4-ee11-9079-000d3aa923d7"},"workflowDisplayName":{"value":"Trigger Ausleihe RowId"},"shared_commondataserviceforapps":{"value":"cd512a1c-1d80-4eee-9297-14192a263a12"},"shared_office365":{"value":"be2b54ef-a446-4d5a-b6d1-71d1493b9d3d"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Bücher":{"entitySetName":"crafd_buchs","logicalName":"crafd_buch"},"Ausleihen":{"entitySetName":"crafd_ausleihes","logicalName":"crafd_ausleihe"},"Benutzer":{"entitySetName":"systemusers","logicalName":"systemuser"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"componenttype":29,"dependencyid":"0dc0e22b-28d2-ee11-9079-000d3aa923d7","componenttypeplatformname":"Workflow"},{"componenttype":29,"dependencyid":"9b0b39e9-bdd4-ee11-9079-000d3aa923d7","componenttypeplatformname":"Workflow"},{"componenttype":1,"logicalname":"crafd_buch"},{"componenttype":1,"logicalname":"crafd_ausleihe"},{"componenttype":1,"logicalname":"systemuser"}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/ankr_bcherverwaltung_c5737_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/ankr_bcherverwaltung_c5737_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

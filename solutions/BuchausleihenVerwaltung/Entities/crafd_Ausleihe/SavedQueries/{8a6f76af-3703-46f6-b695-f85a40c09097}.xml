@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8a6f76af-3703-46f6-b695-f85a40c09097}</savedqueryid>
+    <layoutxml>
+      <grid name="crafd_ausleihes" jump="crafd_id" select="1" icon="1" preview="0">
+        <row name="crafd_ausleihe" id="crafd_ausleiheid">
+          <cell name="crafd_id" width="300" />
+          <cell name="a_a1798248c95246939fcaac06361b5296.fullname" width="215" />
+          <cell name="a_9af95df0da994806b78d0653898054a9.crafd_titel" width="109" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crafd_ausleihe">
+          <attribute name="crafd_ausleiheid" />
+          <attribute name="crafd_id" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity alias="a_a1798248c95246939fcaac06361b5296" name="systemuser" to="crafd_benutzer" from="systemuserid" link-type="outer" visible="false">
+            <attribute name="fullname" />
+          </link-entity>
+          <link-entity alias="a_9af95df0da994806b78d0653898054a9" name="crafd_buch" to="crafd_buch" from="crafd_buchid" link-type="outer" visible="false">
+            <attribute name="crafd_titel" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Ausleihe Suchansicht" languagecode="1031" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

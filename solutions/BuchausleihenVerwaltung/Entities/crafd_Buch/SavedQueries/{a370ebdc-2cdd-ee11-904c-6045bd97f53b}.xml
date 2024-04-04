@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{a370ebdc-2cdd-ee11-904c-6045bd97f53b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crafd_id" select="1" icon="1" preview="1">
+        <row name="result" id="crafd_buchid">
+          <cell name="crafd_id" width="83" />
+          <cell name="crafd_titel" width="100" />
+          <cell name="crafd_beschreibung" width="117" />
+          <cell name="crafd_autor" width="100" />
+          <cell name="crafd_status" width="100" />
+          <cell name="crafd_seitenzahl" width="100" />
+          <cell name="crafd_erscheinungsjahr" width="138" />
+          <cell name="crafd_erscheinungsort" width="131" />
+          <cell name="crafd_kategorien" width="103" />
+          <cell name="crafd_cover" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crafd_buch">
+          <attribute name="crafd_id" />
+          <attribute name="crafd_status" />
+          <attribute name="crafd_titel" />
+          <attribute name="crafd_seitenzahl" />
+          <attribute name="crafd_kategorien" />
+          <attribute name="crafd_autor" />
+          <attribute name="crafd_beschreibung" />
+          <attribute name="crafd_cover" />
+          <attribute name="crafd_erscheinungsjahr" />
+          <attribute name="crafd_buchid" />
+          <attribute name="crafd_erscheinungsort" />
+          <order attribute="crafd_titel" descending="false" />
+          <filter type="and">
+            <condition attribute="crafd_status" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Ausleihbare Bücher" languagecode="1031" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

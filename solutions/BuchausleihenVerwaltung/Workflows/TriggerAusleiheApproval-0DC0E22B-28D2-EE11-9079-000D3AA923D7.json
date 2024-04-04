@@ -1,0 +1,146 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "ankr_sharedcommondataserviceforapps_f05cd"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "ankr_sharedoffice365_1c614"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "701b7daa-bfbd-4229-a74b-90eb660870d6"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "BuchId",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Eingabe eingeben",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "number": {
+                  "title": "Ausleihdauer",
+                  "type": "number",
+                  "x-ms-dynamically-added": true,
+                  "description": "Geben Sie eine Zahl ein.",
+                  "x-ms-content-hint": "NUMBER"
+                },
+                "text_2": {
+                  "title": "UserName",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Eingabe eingeben",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "number_1": {
+                  "title": "AusleihId",
+                  "type": "number",
+                  "x-ms-dynamically-added": true,
+                  "description": "Geben Sie eine Zahl ein.",
+                  "x-ms-content-hint": "NUMBER"
+                },
+                "text_1": {
+                  "title": "Ausleihdatum",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Eingabe eingeben",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "number",
+                "text_2",
+                "number_1",
+                "text_1"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Zeile_aktualisieren_2": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "18f422f4-0e5b-4e68-9ce4-682c2aa6bc0f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "crafd_buchs",
+              "recordId": "@triggerBody()['text']",
+              "item/crafd_status": 3
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "E-Mail_senden_(V2)_2": {
+          "runAfter": {
+            "Zeile_aktualisieren_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5d68b000-5098-4952-b5d0-ff297987b168"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "anastasia.krieger@trinnovative.de",
+              "emailMessage/Subject": "Neue Ausleihe angefragt für '@{outputs('Zeile_aktualisieren_2')?['body/crafd_titel']}'  von @{outputs('Zeile_aktualisieren_2')?['body/crafd_autor']} durch @{triggerBody()['text_2']}",
+              "emailMessage/Body": "<p>Buch: @{outputs('Zeile_aktualisieren_2')?['body/crafd_titel']} &nbsp;<br>\n,<br>\nAusleihdatum: @{triggerBody()['text_1']}<br>\nAusleihdauer: @{triggerBody()['number']}<br>\n<br>\nDer User @{triggerBody()['text_2']} hat eine Ausleihe für das Buch '@{outputs('Zeile_aktualisieren_2')?['body/crafd_titel']}' von @{outputs('Zeile_aktualisieren_2')?['body/crafd_autor']} angefragt. Bitte aktualisieren Sie den Status der Anfrage mit @{triggerBody()['number_1']} \"Akzeptiert\" oder \"Abgelehnt\".</p>",
+              "emailMessage/Importance": "Normal"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

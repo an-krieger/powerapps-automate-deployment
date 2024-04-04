@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ankr_ausleiheanfragen_46793</Name>
+  <AppVersion>2024-04-04T11:22:25Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.24032.26.0</CreatedByClientVersion>
+  <MinClientVersion>3.24032.26.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24032.26","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false","sienaVersion":"20240322T114933Z-3.24032.26.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Anfrage</DisplayName>
+  <Description></Description>
+  <CommitMessage></CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Ausleihen":{"entitySetName":"crafd_ausleihes","logicalName":"crafd_ausleihe"},"Bücher":{"entitySetName":"crafd_buchs","logicalName":"crafd_buch"},"Benutzer":{"entitySetName":"systemusers","logicalName":"systemuser"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>2</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"componenttype":1,"logicalname":"crafd_ausleihe"},{"componenttype":1,"logicalname":"crafd_buch"},{"componenttype":1,"logicalname":"systemuser"}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/ankr_ausleiheanfragen_46793_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/ankr_ausleiheanfragen_46793_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

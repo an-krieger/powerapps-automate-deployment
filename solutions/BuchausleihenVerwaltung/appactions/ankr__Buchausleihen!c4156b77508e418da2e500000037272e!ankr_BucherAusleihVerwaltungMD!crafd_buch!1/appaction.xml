@@ -1,0 +1,37 @@
+<appaction uniquename="ankr__Buchausleihen!c4156b77508e418da2e500000037272e!ankr_BucherAusleihVerwaltungMD!crafd_buch!1">
+  <appmoduleid>
+    <uniquename>ankr_BucherAusleihVerwaltungMD</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Buch ausleihen">
+    <label description="Buch ausleihen" languagecode="1031" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>crafd_buch</logicalname>
+  </contextentity>
+  <contextvalue>crafd_buch</contextvalue>
+  <fonticon>$clientsvg:ActivateOrders</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>1</location>
+  <name>Buchausleihen!c4156b77508e418da2e500000037272e</name>
+  <onclickeventjavascriptfunctionname>openLendDialog</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":10}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>9a5a91ab-64e0-ee11-904c-6045bd97f53b</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>1000100010.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>ankr_bucherausleihverwaltungmddefaultcommandlibrary_55d07</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>398b30e453b04b94a138ca961d613563</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

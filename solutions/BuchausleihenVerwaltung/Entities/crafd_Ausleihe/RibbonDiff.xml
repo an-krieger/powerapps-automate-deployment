@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="ankr.Mscrm.Form.crafd_ausleihe.Activate.Hide" Location="Mscrm.Form.crafd_ausleihe.Activate" />
+    <HideCustomAction HideActionId="ankr.Mscrm.Form.crafd_ausleihe.Deactivate.Hide" Location="Mscrm.Form.crafd_ausleihe.Deactivate" />
+    <HideCustomAction HideActionId="ankr.Mscrm.Form.crafd_ausleihe.Flows.RefreshCommandBar.Flows.Hide" Location="Mscrm.Form.crafd_ausleihe.Flows.RefreshCommandBar.Flows" />
+    <HideCustomAction HideActionId="ankr.Mscrm.Form.crafd_ausleihe.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.crafd_ausleihe.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="ankr.Mscrm.Form.crafd_ausleihe.Reports.Hide" Location="Mscrm.Form.crafd_ausleihe.Reports" />
+    <HideCustomAction HideActionId="ankr.Mscrm.Form.crafd_ausleihe.RunWorkflow.Hide" Location="Mscrm.Form.crafd_ausleihe.RunWorkflow" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.Activate.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.Activate" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.Deactivate.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.Deactivate" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.Flows.RefreshCommandBar.Flows.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.Flows.RefreshCommandBar.Flows" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.Flows.RefreshCommandBar.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.modern.SendDirectEmail.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.modern.SendDirectEmail" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.RunReport.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.RunReport" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.RunWorkflow.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.RunWorkflow" />
+    <HideCustomAction HideActionId="ankr.Mscrm.HomepageGrid.crafd_ausleihe.SendDirectEmail.Hide" Location="Mscrm.HomepageGrid.crafd_ausleihe.SendDirectEmail" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.Activate.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.Activate" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.AddEmail.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.AddEmail" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.AddExistingAssoc" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.AddExistingStandard.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.AddExistingStandard" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.AddNewStandard.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.AddNewStandard" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.BulkDelete.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.BulkDelete" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.Deactivate.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.Deactivate" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.Delete.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.Delete" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.Flows.RefreshCommandBar.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.modern.AddEmail.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.modern.AddEmail" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.NewRecord.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.NewRecord" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.Remove.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.Remove" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.RunReport.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.RunReport" />
+    <HideCustomAction HideActionId="ankr.Mscrm.SubGrid.crafd_ausleihe.SendSelected.Hide" Location="Mscrm.SubGrid.crafd_ausleihe.SendSelected" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

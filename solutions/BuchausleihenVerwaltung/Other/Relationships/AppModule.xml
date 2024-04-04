@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="appmodule_appusersetting_parentappmoduleid">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IntroducedVersion>9.1.0.0</IntroducedVersion>
+    <IsHierarchical>0</IsHierarchical>
+    <ReferencingEntityName>AppUserSetting</ReferencingEntityName>
+    <ReferencedEntityName>AppModule</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeArchive>NoCascade</CascadeArchive>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
+    <IsValidForAdvancedFind>0</IsValidForAdvancedFind>
+    <ReferencingAttributeName>ParentAppModuleId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Eindeutiger Bezeichner für AppModule, das AppUserSetting zugeordnet ist. Falls nicht angegeben, gilt die Einstellung für alle AppModules für den Benutzer." languagecode="1031" />
+      </Descriptions>
+    </RelationshipDescription>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>10000</NavPaneOrder>
+        <NavigationPropertyName>parentappmoduleid</NavigationPropertyName>
+        <RelationshipRoleType>1</RelationshipRoleType>
+      </EntityRelationshipRole>
+      <EntityRelationshipRole>
+        <RelationshipRoleType>0</RelationshipRoleType>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+</EntityRelationships>

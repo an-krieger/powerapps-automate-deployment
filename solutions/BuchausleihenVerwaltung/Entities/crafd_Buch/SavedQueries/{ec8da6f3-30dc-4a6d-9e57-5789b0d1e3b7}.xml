@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ec8da6f3-30dc-4a6d-9e57-5789b0d1e3b7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crafd_id" select="1" icon="1" preview="1">
+        <row name="result" id="crafd_buchid">
+          <cell name="crafd_titel" width="100" />
+          <cell name="crafd_autor" width="100" />
+          <cell name="crafd_id" width="300" />
+          <cell name="crafd_status" width="100" />
+          <cell name="crafd_seitenzahl" width="100" />
+          <cell name="crafd_kategorien" width="103" />
+          <cell name="crafd_beschreibung" width="117" />
+          <cell name="crafd_buchid" width="100" />
+          <cell name="crafd_cover" width="100" />
+          <cell name="crafd_erscheinungsjahr" width="138" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crafd_buch">
+          <attribute name="crafd_buchid" />
+          <attribute name="crafd_id" />
+          <order attribute="crafd_id" descending="false" />
+          <attribute name="crafd_status" />
+          <attribute name="crafd_titel" />
+          <attribute name="crafd_seitenzahl" />
+          <attribute name="crafd_kategorien" />
+          <attribute name="crafd_autor" />
+          <attribute name="crafd_beschreibung" />
+          <attribute name="crafd_cover" />
+          <attribute name="crafd_erscheinungsjahr" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Buch Ansicht für die erweiterte Suche" languagecode="1031" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,144 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "ankr_sharedcommondataserviceforapps_f05cd"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "ankr_sharedoffice365_1c614"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "d99cbade-c102-4a43-95e1-f0188e865a96"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "BuchId",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Eingabe eingeben",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "AusleiheId",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Eingabe eingeben",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Zeile_aktualisieren": {
+          "runAfter": {
+            "Zeile_nach_ID_abrufen": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "a988561f-37a3-43ac-8325-980cfaa99ae4"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "crafd_buchs",
+              "recordId": "@outputs('Zeile_nach_ID_abrufen')?['body/crafd_buchid']",
+              "item/crafd_status": 3
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "E-Mail_senden_(V2)": {
+          "runAfter": {
+            "Zeile_aktualisieren": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "a4b27963-2b1a-4d49-aded-0fabc1cae94f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "anastasia.krieger@trinnovative.de",
+              "emailMessage/Subject": "Ausleihe angefragt für '@{outputs('Zeile_aktualisieren')?['body/crafd_titel']}' von @{outputs('Zeile_aktualisieren')?['body/crafd_autor']}",
+              "emailMessage/Body": "<p>AUsleihe angefragt. Bitte alzeptieren/ablehnen.</p>",
+              "emailMessage/Importance": "Normal"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Zeile_nach_ID_abrufen": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "9b7e759c-66a6-4bc9-a880-2cd02039ccdc"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "crafd_buchs",
+              "recordId": "@triggerBody()['text']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

@@ -1,0 +1,37 @@
+<appaction uniquename="ankr__Anfrageablehnen!cb1ffba041c9428786ca784d44b0cf84!ankr_BucherAusleihVerwaltungMD!crafd_ausleihe!0">
+  <appmoduleid>
+    <uniquename>ankr_BucherAusleihVerwaltungMD</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Anfrage ablehnen">
+    <label description="Anfrage ablehnen" languagecode="1031" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>crafd_ausleihe</logicalname>
+  </contextentity>
+  <contextvalue>crafd_ausleihe</contextvalue>
+  <fonticon>Cancel</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>Anfrageablehnen!cb1ffba041c9428786ca784d44b0cf84</name>
+  <onclickeventjavascriptfunctionname>denyRequestFromForm</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":4},{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>2d8cdeb2-9fe7-ee11-904c-6045bd97f53b</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100017.5000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>ankr_bucherausleihverwaltungmddefaultcommandlibrary_55d07</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>2317b3bea8184c9d8b44fbcb18d954a8</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

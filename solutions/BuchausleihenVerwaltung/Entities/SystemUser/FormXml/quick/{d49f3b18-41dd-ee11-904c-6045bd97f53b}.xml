@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d49f3b18-41dd-ee11-904c-6045bd97f53b}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{9a025415-703a-403e-aec0-bae3436df051}">
+          <labels>
+            <label description="Neue Registerkarte" languagecode="1031" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{6797d648-4890-49bc-ade4-0f26c157d719}">
+                  <labels>
+                    <label description="Neuer Abschnitt" languagecode="1031" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{60f006bc-f49d-4d35-abdb-0001f6562a26}">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ff962ed-2e01-4a73-8224-9b51a1941445}" locklevel="0" colspan="1" rowspan="1" labelid="{1c2fcf92-af7e-43cc-8f5c-d7a68fbdbd66}">
+                        <labels>
+                          <label description="Vollständiger Name" languagecode="1031" />
+                        </labels>
+                        <control id="fullname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="fullname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{621d4423-28cc-46e3-9597-981a2368ecf4}" locklevel="0" colspan="1" rowspan="1" labelid="{068987a6-98b8-4e3a-b071-383a4b113c45}">
+                        <labels>
+                          <label description="Primäre E-Mail-Adresse" languagecode="1031" />
+                        </labels>
+                        <control id="internalemailaddress" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="internalemailaddress" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Benutzer Schnellansichtsformular" languagecode="1031" />
+    </LocalizedNames>
+  </systemform>
+</forms>

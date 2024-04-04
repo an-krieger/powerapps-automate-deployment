@@ -1,0 +1,17 @@
+function hideElementBasedOnRole(executionContext) {
+    elementName = "ausleihhistorie";
+    var formContext = executionContext.getFormContext();
+    var tab = formContext.ui.tabs.get(elementName);
+
+    var roleName = "Systemadministrator";
+
+    let hasRole = false;
+    let roles = Xrm.Utility.getGlobalContext().userSettings.roles;
+    roles.forEach(x => {
+        if (x.name === roleName) {
+            hasRole = true;
+            return;
+        }
+    });
+    tab.setVisible(hasRole);
+}
